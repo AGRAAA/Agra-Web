@@ -16,6 +16,11 @@ export const metadata: Metadata = {
 
   applicationName: "AGRA",
 
+    
+verification: {
+  google: "MCnO1-6GjkiGn0BrvLfjf621ekHTXEPYfa8jesTLarM",
+},
+
   alternates: {
     canonical: "/",
   },
