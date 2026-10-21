@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "AGRA — Personal Website",
+    default: "AGRA | Technology, AI, SEO & Digital Content",
     template: "%s | AGRA",
   },
 
   description:
-    "Explore AGRA's work, personal notes, ideas, and ongoing projects.",
+    "Explore AGRA's journey across technology, AI, SEO, digital content, FnB, barista skills, hospitality, and professional growth.",
 
   applicationName: "AGRA",
 
@@ -26,27 +26,19 @@ verification: {
   },
 
   openGraph: {
-    title: "AGRA — Personal Website",
+    title: "AGRA | Technology, AI, SEO & Digital Content",
     description:
-      "Explore AGRA's work, personal notes, ideas, and ongoing projects.",
+      "Explore AGRA's journey across technology, AI, SEO, digital content, FnB, barista skills, hospitality, and professional growth.",
     url: siteUrl,
     siteName: "AGRA",
     type: "website",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "AGRA — Personal Website",
-      },
-    ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "AGRA — Personal Website",
+    title: "AGRA | Technology, AI, SEO & Digital Content",
     description:
-      "Explore AGRA's work, personal notes, ideas, and ongoing projects.",
+      "Explore AGRA's journey across technology, AI, SEO, digital content, FnB, barista skills, hospitality, and professional growth.",
   },
 
   robots: {
