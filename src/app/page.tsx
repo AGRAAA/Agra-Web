@@ -91,16 +91,16 @@ export default function Home() {
           <p className="eyebrow">A PERSONAL SPACE TO EVOLVE</p>
         </div>
 
-        <h1 className="hero-title max-w-5xl">
-          Ideas into
+                <h1 className="hero-title max-w-5xl">
+          Building experience
           <br />
-          something <span>meaningful.</span>
+          across <span>technology, content & hospitality.</span>
         </h1>
 
         <div className="mt-8 flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <p className="max-w-xl text-base leading-8 text-[#A7ADB8] sm:text-lg">
-            A personal space for projects, thoughts, experiments, and the
-            journey in between. Always learning. Always becoming.
+            Combining professional experience with continuous learning in AI, SEO,
+            digital content, and hospitality.
           </p>
 
           <a href="#work" className="primary-button w-fit">
