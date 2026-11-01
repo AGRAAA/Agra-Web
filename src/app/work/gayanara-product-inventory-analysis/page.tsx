@@ -47,6 +47,19 @@ const topProducts = [
   { name: "Celana Jogger Kanvas Lokal", units: 30 },
 ];
 
+const brandRevenue = [
+  { name: "Riang Apparel", revenue: 118443000, share: 13.16 },
+  { name: "NusaBrand", revenue: 106726000, share: 11.86 },
+  { name: "Cendana Co", revenue: 100081000, share: 11.12 },
+  { name: "Tropika Style", revenue: 97258000, share: 10.81 },
+  { name: "SandangIndo", revenue: 96552000, share: 10.73 },
+  { name: "Senja Wear", revenue: 85774000, share: 9.53 },
+  { name: "BajuKita", revenue: 77689000, share: 8.63 },
+  { name: "Pesona Indo", revenue: 76121000, share: 8.46 },
+  { name: "Kanvas Lokal", revenue: 71828000, share: 7.98 },
+  { name: "Ratu Mode", revenue: 69465000, share: 7.72 },
+];
+
 export default function GayanaraProject() {
   return (
     <main className="min-h-screen bg-[#171A20] text-[#F4F5F7]">
@@ -162,7 +175,51 @@ export default function GayanaraProject() {
     ))}
   </div>
 </section>
+        
+<section className="mt-20">
+  <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
+    BRAND PERFORMANCE
+  </p>
 
+  <h2 className="mt-3 text-2xl font-semibold">
+    Delivered Revenue by Brand
+  </h2>
+
+  <p className="mt-3 text-sm leading-7 text-[#A7ADB8]">
+    Brand contribution based on delivered gross product revenue.
+  </p>
+
+  <div className="mt-8 space-y-6 rounded-2xl border border-white/10 bg-[#232731] p-6 md:p-8">
+    {brandRevenue.map((brand, index) => (
+      <div key={brand.name}>
+        <div className="mb-2 flex flex-wrap items-center justify-between gap-2 text-sm">
+          <span className="text-[#F4F5F7]">
+            <span className="mr-3 text-[#A7ADB8]">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            {brand.name}
+          </span>
+
+          <span className="text-right text-[#C7F36B]">
+            Rp{brand.revenue.toLocaleString("id-ID")} · {brand.share}%
+          </span>
+        </div>
+
+        <div className="h-2 overflow-hidden rounded-full bg-white/10">
+          <div
+            className="h-full rounded-full bg-[#C7F36B]"
+            style={{ width: `${(brand.revenue / 118443000) * 100}%` }}
+          />
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <p className="mt-4 text-xs leading-6 text-[#A7ADB8]">
+    Total delivered gross product revenue: Rp899,937,000.
+    Revenue figures do not represent net revenue or profit.
+  </p>
+</section>
         
         <section className="mt-20">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
