@@ -311,11 +311,30 @@ export default function Home() {
               start a conversation.
             </p>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:anugrahmaulana1605@gmail.com"
               className="contact-button mt-8"
             >
               Get in touch <ArrowUpRight size={17} />
             </a>
+            <div className="mt-8 flex flex-wrap gap-5">
+            <a
+            href="https://www.linkedin.com/in/anugrah-maulana-2176ba30a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-[#3D4530] transition hover:underline"
+            >
+            LinkedIn <ArrowUpRight size={14} className="inline" />
+            </a>
+
+            <a
+            href="https://github.com/AGRAAA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-[#3D4530] transition hover:underline"
+          >
+          GitHub <ArrowUpRight size={14} className="inline" />
+        </a>
+      </div>
             <p className="mt-4 text-xs text-[#596047]">
               Replace the example email with your public contact address.
             </p>
