@@ -83,6 +83,30 @@ const inventoryMetrics = [
 export default function GayanaraProject() {
   return (
     <main className="min-h-screen bg-[#171A20] text-[#F4F5F7]">
+      
+<nav className="sticky top-0 z-50 border-b border-white/10 bg-[#171A20]/95 backdrop-blur-md">
+  <div className="mx-auto flex max-w-6xl gap-6 overflow-x-auto px-6 py-4 text-sm whitespace-nowrap md:px-10">
+    <a href="#overview" className="text-[#A7ADB8] transition hover:text-[#C7F36B]">
+      Overview
+    </a>
+    <a href="#products" className="text-[#A7ADB8] transition hover:text-[#C7F36B]">
+      Products
+    </a>
+    <a href="#brands" className="text-[#A7ADB8] transition hover:text-[#C7F36B]">
+      Brands
+    </a>
+    <a href="#inventory" className="text-[#A7ADB8] transition hover:text-[#C7F36B]">
+      Inventory
+    </a>
+    <a href="#insights" className="text-[#A7ADB8] transition hover:text-[#C7F36B]">
+      Insights
+    </a>
+    <a href="#methodology" className="text-[#A7ADB8] transition hover:text-[#C7F36B]">
+      Methodology
+    </a>
+  </div>
+</nav>
+
       <div className="mx-auto max-w-6xl px-6 py-20 md:px-10">
         <a
           href="/"
@@ -91,7 +115,7 @@ export default function GayanaraProject() {
           ← Back to AGRA
         </a>
 
-        <header className="mt-16 max-w-3xl">
+        <header id="overview" className="mt-16 max-w-3xl scroll-mt-24">
           <p className="text-xs font-medium uppercase tracking-[0.25em] text-[#C7F36B]">
             Portfolio Case Study · Data Analysis
           </p>
@@ -156,7 +180,7 @@ export default function GayanaraProject() {
         </section>
 
         
-<section className="mt-20">
+<section id="products" className="mt-20 scroll-mt-24">
   <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
     PRODUCT PERFORMANCE
   </p>
@@ -196,7 +220,7 @@ export default function GayanaraProject() {
   </div>
 </section>
         
-<section className="mt-20">
+<section id="brands" className="mt-20 scroll-mt-24">
   <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
     BRAND PERFORMANCE
   </p>
@@ -242,7 +266,7 @@ export default function GayanaraProject() {
 </section>
 
         
-<section className="mt-20">
+<section id="inventory" className="mt-20 scroll-mt-24">
   <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
     INVENTORY ANALYSIS
   </p>
@@ -305,7 +329,7 @@ export default function GayanaraProject() {
 </section>
 
         
-        <section className="mt-20">
+        <section id="insights" className="mt-20 scroll-mt-24">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
             Key findings
           </p>
@@ -356,7 +380,7 @@ export default function GayanaraProject() {
           </div>
         </section>
 
-        <section className="mt-20">
+        <section id="methodology" className="mt-20 scroll-mt-24">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
             Methodology
           </p>
