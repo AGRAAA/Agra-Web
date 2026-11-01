@@ -335,9 +335,6 @@ export default function Home() {
           GitHub <ArrowUpRight size={14} className="inline" />
         </a>
       </div>
-            <p className="mt-4 text-xs text-[#596047]">
-              Replace the example email with your public contact address.
-            </p>
           </div>
         </div>
       </section>
