@@ -34,6 +34,19 @@ const recommendations = [
   "Review high stock exposure against stock age and expected demand.",
 ];
 
+const topProducts = [
+  { name: "T-Shirt Graphic BajuKita", units: 33 },
+  { name: "Kemeja Oxford Riang Apparel", units: 32 },
+  { name: "Topi Baseball SandangIndo", units: 32 },
+  { name: "Jacket Coach NusaBrand", units: 32 },
+  { name: "Dompet Kulit Pesona Indo", units: 31 },
+  { name: "Kaos Oversize Tropika Style", units: 31 },
+  { name: "Celana Kulot Tropika Style", units: 31 },
+  { name: "Shirt Slim Fit Tropika Style", units: 30 },
+  { name: "Ikat Pinggang Kulit SandangIndo", units: 30 },
+  { name: "Celana Jogger Kanvas Lokal", units: 30 },
+];
+
 export default function GayanaraProject() {
   return (
     <main className="min-h-screen bg-[#171A20] text-[#F4F5F7]">
