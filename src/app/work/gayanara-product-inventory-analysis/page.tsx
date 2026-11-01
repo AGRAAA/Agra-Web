@@ -225,14 +225,13 @@ export default function GayanaraProject() {
             >
               Download Excel Workbook ↗
             </a>
-
             <a
-              href="/documents/Gayanara_Product_Inventory_Analysis_Portfolio.xlsx"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex rounded-full border border-white/20 px-6 py-3 text-sm text-[#F4F5F7] transition hover:border-[#C7F36B]"
-            >
-              Open Workbook ↗
+            href="https://docs.google.com/gview?embedded=1&url=https%3A%2F%2Fagra-web-eta.vercel.app%2Fdocuments%2FGayanara_Product_Inventory_Analysis_Portfolio.xlsx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex rounded-full border border-white/20 px-6 py-3 text-sm text-[#F4F5F7] transition hover:border-[#C7F36B]"
+      >
+            Open Workbook ↗
             </a>
           </div>
         </section>
