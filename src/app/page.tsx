@@ -30,6 +30,17 @@ const projects = [
     className: "project-art-two",
     status: "In progress",
   },
+  {
+    number: "03",
+    category: "RESEARCH / DATA ANALYSIS",
+    title: "Affordable Housing Research",
+    description:
+      "Analyzing student accommodation affordability, market conditions, and budget optimization strategies in Jatinangor.",
+    icon: Layers3,
+    className: "project-art-one",
+    status: "Case study",
+    href: "/work/affordable-housing-jatinangor",
+  },
 ];
 
 const notes = [
