@@ -176,6 +176,11 @@ export default function Home() {
                 key={project.number}
                 className="project-card group overflow-hidden rounded-2xl"
               >
+                <a
+                href={project.href || "#"}
+                className="block"
+                aria-label={`View project: ${project.title}`}
+              >
                 <div className={`project-art ${project.className}`}>
                   <span className="project-number">{project.number}</span>
                   <Icon
@@ -202,6 +207,7 @@ export default function Home() {
                     {project.description}
                   </p>
                 </div>
+                </a>
               </article>
             );
           })}
