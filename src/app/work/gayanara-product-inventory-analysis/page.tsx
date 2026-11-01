@@ -122,6 +122,48 @@ export default function GayanaraProject() {
           </p>
         </section>
 
+        
+<section className="mt-20">
+  <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
+    PRODUCT PERFORMANCE
+  </p>
+
+  <h2 className="mt-3 text-2xl font-semibold">
+    Top 10 Products by Demand
+  </h2>
+
+  <p className="mt-3 text-sm leading-7 text-[#A7ADB8]">
+    Products ranked by total units across processing, shipped, and delivered
+    orders.
+  </p>
+
+  <div className="mt-8 space-y-5 rounded-2xl border border-white/10 bg-[#232731] p-6 md:p-8">
+    {topProducts.map((product, index) => (
+      <div key={product.name}>
+        <div className="mb-2 flex items-center justify-between gap-4 text-sm">
+          <span className="text-[#F4F5F7]">
+            <span className="mr-3 text-[#A7ADB8]">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            {product.name}
+          </span>
+          <span className="shrink-0 font-medium text-[#C7F36B]">
+            {product.units} units
+          </span>
+        </div>
+
+        <div className="h-2 overflow-hidden rounded-full bg-white/10">
+          <div
+            className="h-full rounded-full bg-[#C7F36B]"
+            style={{ width: `${(product.units / 33) * 100}%` }}
+          />
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+        
         <section className="mt-20">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
             Key findings
