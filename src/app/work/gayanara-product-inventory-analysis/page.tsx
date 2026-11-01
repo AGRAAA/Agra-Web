@@ -60,6 +60,26 @@ const brandRevenue = [
   { name: "Ratu Mode", revenue: 69465000, share: 7.72 },
 ];
 
+
+const inventoryMetrics = [
+  {
+    label: "Stockout Candidates",
+    value: 10,
+    description: "Zero current stock with recent demand.",
+  },
+  {
+    label: "No Sales in 90 Days",
+    value: 47,
+    description: "Positive stock with no recent recorded demand.",
+  },
+  {
+    label: "High Stock-Cover Proxy",
+    value: 65,
+    description: "Current stock divided by 90-day sales is at least 90.",
+  },
+];
+
+
 export default function GayanaraProject() {
   return (
     <main className="min-h-screen bg-[#171A20] text-[#F4F5F7]">
@@ -220,6 +240,70 @@ export default function GayanaraProject() {
     Revenue figures do not represent net revenue or profit.
   </p>
 </section>
+
+        
+<section className="mt-20">
+  <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
+    INVENTORY ANALYSIS
+  </p>
+
+  <h2 className="mt-3 text-2xl font-semibold">
+    Inventory Health Overview
+  </h2>
+
+  <p className="mt-3 text-sm leading-7 text-[#A7ADB8]">
+    Inventory screening based on current stock and recorded demand
+    during the latest 90-day dataset period.
+  </p>
+
+  <div className="mt-8 grid gap-4 md:grid-cols-3">
+    {inventoryMetrics.map((metric) => (
+      <article
+        key={metric.label}
+        className="rounded-2xl border border-white/10 bg-[#232731] p-6"
+      >
+        <p className="text-sm text-[#A7ADB8]">
+          {metric.label}
+        </p>
+
+        <p className="mt-5 text-5xl font-semibold tracking-tight text-[#C7F36B]">
+          {metric.value}
+        </p>
+
+        <p className="mt-4 text-sm leading-6 text-[#A7ADB8]">
+          {metric.description}
+        </p>
+      </article>
+    ))}
+  </div>
+
+  <div className="mt-6 rounded-2xl border border-white/10 bg-[#232731] p-6">
+    <h3 className="font-medium">
+      What these indicators mean
+    </h3>
+
+    <ul className="mt-4 space-y-3 text-sm leading-7 text-[#A7ADB8]">
+      <li>
+        <span className="text-[#C7F36B]">10 stockout candidates:</span>{" "}
+        Products with zero current stock but recorded recent demand.
+      </li>
+      <li>
+        <span className="text-[#C7F36B]">47 no-sales products:</span>{" "}
+        Products with positive stock but no recorded demand in the latest 90 days.
+      </li>
+      <li>
+        <span className="text-[#C7F36B]">65 high stock-cover candidates:</span>{" "}
+        Products whose current stock divided by 90-day sales is at least 90.
+      </li>
+    </ul>
+  </div>
+
+  <p className="mt-4 text-xs leading-6 text-[#A7ADB8]">
+    These are screening indicators, not definitive proof of lost sales,
+    dead stock, or optimal replenishment quantities.
+  </p>
+</section>
+
         
         <section className="mt-20">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
