@@ -41,6 +41,18 @@ const projects = [
     status: "Case study",
     href: "/work/affordable-housing-jatinangor",
   },
+  
+  {
+    number: "04",
+    category: "DATA ANALYSIS / INVENTORY",
+    title: "Gayanara Product & Inventory Analysis",
+    description:
+      "Analyzing product demand, brand performance, and inventory signals to support smarter restock decisions.",
+    icon: Layers3,
+    className: "project-art-two",
+    status: "Case study",
+    href: "/work/gayanara-product-inventory-analysis",
+  },
 ];
 
 const notes = [
