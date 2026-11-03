@@ -4,6 +4,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   Code2,
+  Database,
   Layers3,
   Menu,
   Sparkles,
@@ -53,6 +54,18 @@ const projects = [
     status: "Case study",
     href: "/work/gayanara-product-inventory-analysis",
   },
+
+  {
+  number: "05",
+  category: "SQL / DATA ANALYSIS",
+  title: "Gayanara SQL Data Analysis",
+  description:
+    "Exploring product performance, brand revenue, and inventory risks through SQL Server queries.",
+  icon: Database,
+  className: "project-art-one",
+  status: "Case study",
+  href: "/work/gayanara-sql-data-analysis",
+},
 ];
 
 const notes = [
