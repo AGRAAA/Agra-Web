@@ -14,6 +14,26 @@ export default function GayanaraSQLProject() {
           Exploring product performance, brand revenue, and inventory risks
           through SQL Server queries.
         </p>
+
+        
+        <nav className="mt-12 flex flex-wrap gap-3 border-y border-white/10 py-5">
+          {[
+            { label: "Overview", href: "#overview" },
+            { label: "Products", href: "#product-analysis" },
+            { label: "Brands", href: "#brand-analysis" },
+            { label: "Inventory", href: "#inventory-analysis" },
+            { label: "Methodology", href: "#methodology" },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="rounded-full border border-white/10 px-4 py-2 text-xs text-[#A7ADB8] transition hover:border-[#C7F36B] hover:text-[#C7F36B]"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+        
               <section id="overview" className="mt-20 max-w-3xl">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
             PROJECT OVERVIEW
