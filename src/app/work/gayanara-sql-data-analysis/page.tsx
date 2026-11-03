@@ -235,9 +235,65 @@ ORDER BY pr.stock DESC;`}</code>
           </div>
                 </section>
 
+        
         <section className="mt-20 max-w-4xl">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
             SQL ANALYSIS 04
+          </p>
+
+          <h2 className="mt-5 text-2xl font-semibold md:text-3xl">
+            Stockout Analysis
+          </h2>
+
+          <p className="mt-5 leading-relaxed text-[#A7ADB8]">
+            This query identifies products with zero current stock that
+            have recorded valid sales. These products may require further
+            investigation to understand potential stock availability risks.
+          </p>
+
+          <div className="mt-8 overflow-x-auto rounded-xl border border-white/10 bg-[#101319] p-5">
+            <pre className="text-sm leading-relaxed text-[#C7F36B]">
+              <code>{`SELECT
+    pr.product_id,
+    pr.name,
+    pr.brand,
+    pr.stock,
+    SUM(oi.quantity) AS total_sold
+FROM products pr
+JOIN order_items oi
+    ON pr.product_id = oi.product_id
+JOIN orders od
+    ON od.order_id = oi.order_id
+WHERE od.order_status NOT IN ('cancelled', 'returned')
+GROUP BY
+    pr.product_id,
+    pr.name,
+    pr.brand,
+    pr.stock
+HAVING pr.stock = 0
+ORDER BY total_sold DESC;`}</code>
+            </pre>
+          </div>
+
+          <div className="mt-8 rounded-xl border border-white/10 p-6">
+            <p className="text-xs uppercase tracking-[0.15em] text-[#A7ADB8]">
+              ANALYSIS PURPOSE
+            </p>
+            <h3 className="mt-3 text-xl font-semibold">
+              Products with Zero Current Stock
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-[#A7ADB8]">
+              Products with zero current stock and recorded valid sales
+              are identified as stockout candidates. Historical sales
+              indicate demand, but do not establish whether the products
+              are currently experiencing unmet demand.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-20 max-w-4xl">
+          <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
+            SQL ANALYSIS 05
           </p>
 
           <h2 className="mt-5 text-2xl font-semibold md:text-3xl">
@@ -297,7 +353,7 @@ ORDER BY
 
         <section className="mt-20 max-w-4xl">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
-            SQL ANALYSIS 05
+            SQL ANALYSIS 06
           </p>
 
           <h2 className="mt-5 text-2xl font-semibold md:text-3xl">
@@ -358,7 +414,7 @@ ORDER BY stock_to_sales_ratio DESC;`}</code>
 
         <section className="mt-20 max-w-4xl">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
-            SQL ANALYSIS 06
+            SQL ANALYSIS 07
           </p>
 
           <h2 className="mt-5 text-2xl font-semibold md:text-3xl">
@@ -416,7 +472,7 @@ ORDER BY total_revenue DESC;`}</code>
 
         <section className="mt-20 max-w-4xl">
           <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
-            SQL ANALYSIS 07
+            SQL ANALYSIS 08
           </p>
 
           <h2 className="mt-5 text-2xl font-semibold md:text-3xl">
