@@ -29,6 +29,12 @@ export default function GayanaraSQLProject() {
   return (
     <main className="min-h-screen bg-[#171A20] text-[#F4F5F7]">
       <div className="mx-auto max-w-6xl px-6 py-20 md:px-10">
+                <a
+          href="/"
+          className="mb-10 inline-flex items-center gap-2 text-sm text-[#A7ADB8] transition hover:text-[#C7F36B]"
+        >
+          ← Back to AGRA
+        </a>
         <p className="text-xs uppercase tracking-[0.2em] text-[#C7F36B]">
           SQL DATA ANALYSIS / PORTFOLIO CASE STUDY
         </p>
