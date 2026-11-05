@@ -4,7 +4,7 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://agra-web-eta.vercel.app",
+      url: "https://agra-me.vercel.app",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
