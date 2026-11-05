@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const siteUrl = "https://agra-web-eta.vercel.app";
+const siteUrl = "https://agra-me.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -22,7 +22,7 @@ verification: {
 },
 
   alternates: {
-    canonical: "/",
+    canonical: "https://agra-me.vercel.app",
   },
 
   openGraph: {
