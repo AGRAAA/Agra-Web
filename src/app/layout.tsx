@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"; // Pastikan path ini sesuai dokumen Vercel Analytics terbaru project kamu
 
 const siteUrl = "https://agra-me.vercel.app";
 
@@ -16,10 +17,9 @@ export const metadata: Metadata = {
 
   applicationName: "AGRA",
 
-    
-verification: {
-  google: "MCnO1-6GjkiGn0BrvLfjf621ekHTXEPYfa8jesTLarM",
-},
+  verification: {
+    google: "MCnO1-6GjkiGn0BrvLfjf621ekHTXEPYfa8jesTLarM",
+  },
 
   alternates: {
     canonical: "https://agra-me.vercel.app",
@@ -54,7 +54,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics /> {/* Ini wajib dipanggil agar analytics-nya jalan */}
+      </body>
     </html>
   );
 }
