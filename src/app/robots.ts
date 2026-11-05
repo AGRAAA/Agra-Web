@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://agra-web-eta.vercel.app/sitemap.xml",
+    sitemap: "https://agra-me.vercel.app//sitemap.xml",
   };
 }
