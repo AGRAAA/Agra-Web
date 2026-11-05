@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react"; // Pastikan path ini sesuai dokumen Vercel Analytics terbaru project kamu
+import { Analytics } from "@vercel/analytics/next";
 
 const siteUrl = "https://agra-me.vercel.app";
 
@@ -56,7 +56,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-        <Analytics /> {/* Ini wajib dipanggil agar analytics-nya jalan */}
+        <Analytics />
       </body>
     </html>
   );
