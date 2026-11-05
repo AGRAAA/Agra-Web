@@ -1,3 +1,30 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gayanara SQL Data Analysis",
+  description:
+    "A SQL Server case study by AGRA exploring product performance, brand revenue, stockout analysis, and inventory risks through SQL queries.",
+  keywords: [
+    "SQL Data Analysis",
+    "SQL Server Portfolio",
+    "Data Analysis",
+    "Inventory Analysis",
+    "Product Performance",
+    "AGRA",
+  ],
+  alternates: {
+    canonical: "https://agra-web-eta.vercel.app/work/gayanara-sql-data-analysis",
+  },
+  openGraph: {
+    title: "Gayanara SQL Data Analysis | AGRA",
+    description:
+      "Exploring product performance, brand revenue, and inventory risks through SQL Server queries.",
+    url: "https://agra-web-eta.vercel.app/work/gayanara-sql-data-analysis",
+    siteName: "AGRA",
+    type: "article",
+  },
+};
+
 export default function GayanaraSQLProject() {
   return (
     <main className="min-h-screen bg-[#171A20] text-[#F4F5F7]">
